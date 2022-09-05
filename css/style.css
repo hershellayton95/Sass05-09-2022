@@ -1,0 +1,457 @@
+::-webkit-scrollbar {
+  width: 1rem;
+  height: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: orange;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffd280;
+}
+
+body {
+  height: 1000px;
+  width: 2000px;
+}
+
+.btn {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  padding: 0.7rem 1rem;
+  border: none;
+  font-family: cursive;
+  width: 300px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #006700;
+}
+.btn:focus {
+  background-color: #004d00;
+  outline: none;
+}
+.btn:active {
+  background-color: #003400;
+  transform: scale(0.9);
+}
+.btn-yellow {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  padding: 0.7rem 1rem;
+  border: none;
+  font-family: cursive;
+  width: 300px;
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+}
+.btn-yellow:hover {
+  transform: scale(1.05);
+  background-color: #e6e600;
+}
+.btn-yellow:focus {
+  background-color: #cccc00;
+  outline: none;
+}
+.btn-yellow:active {
+  background-color: #b3b300;
+  transform: scale(0.9);
+}
+.btn-red {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  padding: 0.7rem 1rem;
+  border: none;
+  font-family: cursive;
+  width: 300px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.btn-red:hover {
+  transform: scale(1.05);
+  background-color: #e60000;
+}
+.btn-red:focus {
+  background-color: #cc0000;
+  outline: none;
+}
+.btn-red:active {
+  background-color: #b30000;
+  transform: scale(0.9);
+}
+
+[class^=box] {
+  width: 200px;
+  height: 200px;
+  margin: 2rem;
+}
+
+.box-0 {
+  transform: translateX(0px);
+  border-radius: 0px;
+  background-color: rgb(19, 12, 51);
+}
+
+.box-1 {
+  transform: translateX(100px);
+  border-radius: 10px;
+  background-color: rgba(19, 12, 51, 0.67);
+}
+
+.box-2 {
+  transform: translateX(200px);
+  border-radius: 20px;
+  background-color: rgba(19, 12, 51, 0.34);
+}
+
+.box-0 {
+  transform: translateX(0px);
+  border-radius: 0px;
+  background-color: rgb(19, 12, 51);
+}
+
+.box-1 {
+  transform: translateX(100px);
+  border-radius: 10px;
+  background-color: rgba(19, 12, 51, 0.67);
+}
+
+.box-2 {
+  transform: translateX(200px);
+  border-radius: 20px;
+  background-color: rgba(19, 12, 51, 0.34);
+}
+
+@keyframes animation-color {
+  0% {
+    background-color: hsl(0deg, 100%, 50%);
+  }
+  1% {
+    background-color: hsl(1deg, 100%, 50%);
+  }
+  2% {
+    background-color: hsl(2deg, 100%, 50%);
+  }
+  3% {
+    background-color: hsl(3deg, 100%, 50%);
+  }
+  4% {
+    background-color: hsl(4deg, 100%, 50%);
+  }
+  5% {
+    background-color: hsl(5deg, 100%, 50%);
+  }
+  6% {
+    background-color: hsl(6deg, 100%, 50%);
+  }
+  7% {
+    background-color: hsl(7deg, 100%, 50%);
+  }
+  8% {
+    background-color: hsl(8deg, 100%, 50%);
+  }
+  9% {
+    background-color: hsl(9deg, 100%, 50%);
+  }
+  10% {
+    background-color: hsl(10deg, 100%, 50%);
+  }
+  11% {
+    background-color: hsl(11deg, 100%, 50%);
+  }
+  12% {
+    background-color: hsl(12deg, 100%, 50%);
+  }
+  13% {
+    background-color: hsl(13deg, 100%, 50%);
+  }
+  14% {
+    background-color: hsl(14deg, 100%, 50%);
+  }
+  15% {
+    background-color: hsl(15deg, 100%, 50%);
+  }
+  16% {
+    background-color: hsl(16deg, 100%, 50%);
+  }
+  17% {
+    background-color: hsl(17deg, 100%, 50%);
+  }
+  18% {
+    background-color: hsl(18deg, 100%, 50%);
+  }
+  19% {
+    background-color: hsl(19deg, 100%, 50%);
+  }
+  20% {
+    background-color: hsl(20deg, 100%, 50%);
+  }
+  21% {
+    background-color: hsl(21deg, 100%, 50%);
+  }
+  22% {
+    background-color: hsl(22deg, 100%, 50%);
+  }
+  23% {
+    background-color: hsl(23deg, 100%, 50%);
+  }
+  24% {
+    background-color: hsl(24deg, 100%, 50%);
+  }
+  25% {
+    background-color: hsl(25deg, 100%, 50%);
+  }
+  26% {
+    background-color: hsl(26deg, 100%, 50%);
+  }
+  27% {
+    background-color: hsl(27deg, 100%, 50%);
+  }
+  28% {
+    background-color: hsl(28deg, 100%, 50%);
+  }
+  29% {
+    background-color: hsl(29deg, 100%, 50%);
+  }
+  30% {
+    background-color: hsl(30deg, 100%, 50%);
+  }
+  31% {
+    background-color: hsl(31deg, 100%, 50%);
+  }
+  32% {
+    background-color: hsl(32deg, 100%, 50%);
+  }
+  33% {
+    background-color: hsl(33deg, 100%, 50%);
+  }
+  34% {
+    background-color: hsl(34deg, 100%, 50%);
+  }
+  35% {
+    background-color: hsl(35deg, 100%, 50%);
+  }
+  36% {
+    background-color: hsl(36deg, 100%, 50%);
+  }
+  37% {
+    background-color: hsl(37deg, 100%, 50%);
+  }
+  38% {
+    background-color: hsl(38deg, 100%, 50%);
+  }
+  39% {
+    background-color: hsl(39deg, 100%, 50%);
+  }
+  40% {
+    background-color: hsl(40deg, 100%, 50%);
+  }
+  41% {
+    background-color: hsl(41deg, 100%, 50%);
+  }
+  42% {
+    background-color: hsl(42deg, 100%, 50%);
+  }
+  43% {
+    background-color: hsl(43deg, 100%, 50%);
+  }
+  44% {
+    background-color: hsl(44deg, 100%, 50%);
+  }
+  45% {
+    background-color: hsl(45deg, 100%, 50%);
+  }
+  46% {
+    background-color: hsl(46deg, 100%, 50%);
+  }
+  47% {
+    background-color: hsl(47deg, 100%, 50%);
+  }
+  48% {
+    background-color: hsl(48deg, 100%, 50%);
+  }
+  49% {
+    background-color: hsl(49deg, 100%, 50%);
+  }
+  50% {
+    background-color: hsl(50deg, 100%, 50%);
+  }
+  51% {
+    background-color: hsl(51deg, 100%, 50%);
+  }
+  52% {
+    background-color: hsl(52deg, 100%, 50%);
+  }
+  53% {
+    background-color: hsl(53deg, 100%, 50%);
+  }
+  54% {
+    background-color: hsl(54deg, 100%, 50%);
+  }
+  55% {
+    background-color: hsl(55deg, 100%, 50%);
+  }
+  56% {
+    background-color: hsl(56deg, 100%, 50%);
+  }
+  57% {
+    background-color: hsl(57deg, 100%, 50%);
+  }
+  58% {
+    background-color: hsl(58deg, 100%, 50%);
+  }
+  59% {
+    background-color: hsl(59deg, 100%, 50%);
+  }
+  60% {
+    background-color: hsl(60deg, 100%, 50%);
+  }
+  61% {
+    background-color: hsl(61deg, 100%, 50%);
+  }
+  62% {
+    background-color: hsl(62deg, 100%, 50%);
+  }
+  63% {
+    background-color: hsl(63deg, 100%, 50%);
+  }
+  64% {
+    background-color: hsl(64deg, 100%, 50%);
+  }
+  65% {
+    background-color: hsl(65deg, 100%, 50%);
+  }
+  66% {
+    background-color: hsl(66deg, 100%, 50%);
+  }
+  67% {
+    background-color: hsl(67deg, 100%, 50%);
+  }
+  68% {
+    background-color: hsl(68deg, 100%, 50%);
+  }
+  69% {
+    background-color: hsl(69deg, 100%, 50%);
+  }
+  70% {
+    background-color: hsl(70deg, 100%, 50%);
+  }
+  71% {
+    background-color: hsl(71deg, 100%, 50%);
+  }
+  72% {
+    background-color: hsl(72deg, 100%, 50%);
+  }
+  73% {
+    background-color: hsl(73deg, 100%, 50%);
+  }
+  74% {
+    background-color: hsl(74deg, 100%, 50%);
+  }
+  75% {
+    background-color: hsl(75deg, 100%, 50%);
+  }
+  76% {
+    background-color: hsl(76deg, 100%, 50%);
+  }
+  77% {
+    background-color: hsl(77deg, 100%, 50%);
+  }
+  78% {
+    background-color: hsl(78deg, 100%, 50%);
+  }
+  79% {
+    background-color: hsl(79deg, 100%, 50%);
+  }
+  80% {
+    background-color: hsl(80deg, 100%, 50%);
+  }
+  81% {
+    background-color: hsl(81deg, 100%, 50%);
+  }
+  82% {
+    background-color: hsl(82deg, 100%, 50%);
+  }
+  83% {
+    background-color: hsl(83deg, 100%, 50%);
+  }
+  84% {
+    background-color: hsl(84deg, 100%, 50%);
+  }
+  85% {
+    background-color: hsl(85deg, 100%, 50%);
+  }
+  86% {
+    background-color: hsl(86deg, 100%, 50%);
+  }
+  87% {
+    background-color: hsl(87deg, 100%, 50%);
+  }
+  88% {
+    background-color: hsl(88deg, 100%, 50%);
+  }
+  89% {
+    background-color: hsl(89deg, 100%, 50%);
+  }
+  90% {
+    background-color: hsl(90deg, 100%, 50%);
+  }
+  91% {
+    background-color: hsl(91deg, 100%, 50%);
+  }
+  92% {
+    background-color: hsl(92deg, 100%, 50%);
+  }
+  93% {
+    background-color: hsl(93deg, 100%, 50%);
+  }
+  94% {
+    background-color: hsl(94deg, 100%, 50%);
+  }
+  95% {
+    background-color: hsl(95deg, 100%, 50%);
+  }
+  96% {
+    background-color: hsl(96deg, 100%, 50%);
+  }
+  97% {
+    background-color: hsl(97deg, 100%, 50%);
+  }
+  98% {
+    background-color: hsl(98deg, 100%, 50%);
+  }
+  99% {
+    background-color: hsl(99deg, 100%, 50%);
+  }
+  100% {
+    background-color: hsl(100deg, 100%, 50%);
+  }
+}
+.square {
+  width: 10rem;
+  height: 10rem;
+  margin: 3rem auto;
+  border: 5px solid black;
+  border-radius: 1rem;
+  animation: animation-color 5s infinite alternate-reverse;
+}
+
+.image {
+  height: 500px;
+  width: 700px;
+  background-image: linear-gradient(to bottom, hsla(0deg, 100%, 50%, 0.5) 0%, hsla(0deg, 100%, 50%, 0.4)0% ,hsla(18deg, 100%, 50%, 0.4)0%, hsla(18deg, 100%, 50%, 0.4)5% ,hsla(36deg, 100%, 50%, 0.4)5%, hsla(36deg, 100%, 50%, 0.4)10% ,hsla(54deg, 100%, 50%, 0.4)10%, hsla(54deg, 100%, 50%, 0.4)15% ,hsla(72deg, 100%, 50%, 0.4)15%, hsla(72deg, 100%, 50%, 0.4)20% ,hsla(90deg, 100%, 50%, 0.4)20%, hsla(90deg, 100%, 50%, 0.4)25% ,hsla(108deg, 100%, 50%, 0.4)25%, hsla(108deg, 100%, 50%, 0.4)30% ,hsla(126deg, 100%, 50%, 0.4)30%, hsla(126deg, 100%, 50%, 0.4)35% ,hsla(144deg, 100%, 50%, 0.4)35%, hsla(144deg, 100%, 50%, 0.4)40% ,hsla(162deg, 100%, 50%, 0.4)40%, hsla(162deg, 100%, 50%, 0.4)45% ,hsla(180deg, 100%, 50%, 0.4)45%, hsla(180deg, 100%, 50%, 0.4)50% ,hsla(198deg, 100%, 50%, 0.4)50%, hsla(198deg, 100%, 50%, 0.4)55% ,hsla(216deg, 100%, 50%, 0.4)55%, hsla(216deg, 100%, 50%, 0.4)60% ,hsla(234deg, 100%, 50%, 0.4)60%, hsla(234deg, 100%, 50%, 0.4)65% ,hsla(252deg, 100%, 50%, 0.4)65%, hsla(252deg, 100%, 50%, 0.4)70% ,hsla(270deg, 100%, 50%, 0.4)70%, hsla(270deg, 100%, 50%, 0.4)75% ,hsla(288deg, 100%, 50%, 0.4)75%, hsla(288deg, 100%, 50%, 0.4)80% ,hsla(306deg, 100%, 50%, 0.4)80%, hsla(306deg, 100%, 50%, 0.4)85% ,hsla(324deg, 100%, 50%, 0.4)85%, hsla(324deg, 100%, 50%, 0.4)90% ,hsla(342deg, 100%, 50%, 0.4)90%, hsla(342deg, 100%, 50%, 0.4)95% ,hsla(0deg, 100%, 50%, 0.4)95%, hsla(0deg, 100%, 50%, 0.4)100% ,hsla(18deg, 100%, 50%, 0.4)100%), url(https://images.everyeye.it/img-notizie/guardiani-galassia-come-prende-rocket-racoon-video-inquietante-v4-450928-1280x960.jpg);
+}
+
+/*# sourceMappingURL=style.css.map */

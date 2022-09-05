@@ -1,0 +1,87 @@
+@import "mixin.scss";
+@import "function.scss";
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+    ::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $foreground-color;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: $background-color;
+    }
+}
+
+@include scrollbars(1rem, orange);
+
+body {
+    height: 1000px;
+    width: 2000px;
+}
+
+.btn {
+    @include simple-button(green, white);
+
+    &-yellow {
+        @include simple-button(yellow, black);
+    }
+    &-red {
+        @include simple-button(red, white);
+    }
+}
+
+
+[class^="box"] {
+    width: 200px;
+    height: 200px;
+    margin: 2rem;
+}
+
+@for $i from 0 through 2 {
+    .box-#{$i} {
+        transform: translateX(100px * $i);
+        border-radius: 10px * $i;
+        background-color: rgba(19, 12, 51, 1-(0.33 * $i));
+    }
+    
+}
+
+
+$i: 0;
+@while $i < 3 {
+    .box-#{$i} {
+        transform: translateX(100px * $i);
+        border-radius: 10px * $i;
+        background-color: rgba(19, 12, 51, 1-(0.33 * $i));
+    }
+    $i: $i + 1;
+}
+
+@keyframes animation-color {
+    @for $i from 0 through 100 {
+        #{$i * 1%} {
+            background-color: hsl($i, 100%, 50%);
+        }
+    }
+}
+
+.square {
+    width: 10rem;
+    height:10rem;
+    margin: 3rem auto;
+    border: 5px solid black;
+    border-radius: 1rem;
+    animation: animation-color 5s infinite alternate-reverse;
+}
+
+
+.image {
+    height: 500px;
+    width: 700px;
+    background-image: stripes(20,"https://images.everyeye.it/img-notizie/guardiani-galassia-come-prende-rocket-racoon-video-inquietante-v4-450928-1280x960.jpg");
+}
+

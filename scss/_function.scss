@@ -1,0 +1,15 @@
+@function stripes($nr, $url) {
+    $start: hsla(0,100%, 50%, 0.5);
+    // Per prima cosa calcoliamo i due incrementi che ci serviranno nel corso della funzione ($step_1 e $step_2)
+    $step_1: calc(100% / $nr); //$step_1 ci aiuta nello stabilire il punto da cui deve partire una specifica banda di colore;
+    $step_2: calc(360 / $nr); //$step_2 indica la distanza tra due colori adiacenti che useremo nella notazione di colore hsla (hue - saturation - lightness - alpha) per definire i colori tra le varie bande
+    $stripe: "linear-gradient(to bottom, " + $start + " 0%"; 
+    /*Una volta preparati questi due incrementi con un ciclo for generiamo tante iterazioni quante 
+    il numero di bande volute e per ognuna di essere facciamo combaciare, alla stessa distanza nell'immagine, la fine di una banda con l'inizio della 
+    successiva generando il linear-gradient voluto. */
+    @for $i from 0 through $nr {
+        $stripe: $stripe + ", " + hsla($step_2 * $i, 100%, 50%, 0.4) + ($step_1 * $i) + " ," + hsla($step_2 * ($i + 1), 100%, 50%, 0.4) + ($step_1 * $i);
+    }
+    $stripe: $stripe + ")";
+    @return unquote($stripe + ", url(" + $url + ")");
+}

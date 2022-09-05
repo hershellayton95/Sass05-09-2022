@@ -1,0 +1,28 @@
+@mixin simple-button($background-color, $text-color) {
+    box-sizing: border-box;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.20);
+    padding: 0.7rem 1rem;
+    border: none;
+    font-family: cursive;
+    width: 300px;
+    background-color: $background-color;
+    color: $text-color;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+        background-color: darken($background-color, 5%);
+    }
+
+    &:focus {
+        background-color: darken($background-color, 10%);
+        outline: none;
+    }
+
+    &:active {
+        background-color: darken($background-color, 15%);
+        transform: scale(0.90);
+    }
+}
